@@ -6,3 +6,4 @@ tools/
 games/
 build_binary.bat
 output/
+/target/
