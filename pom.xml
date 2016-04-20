@@ -14,6 +14,26 @@
           <exclude>**/*.java</exclude>
         </excludes>
       </resource>
+      <resource>
+        <directory>${basedir}/mods</directory>
+        <targetPath>${project.build.directory}/mods/</targetPath>
+      </resource>
+      <resource>
+        <directory>${basedir}/lib</directory>
+        <targetPath>${project.build.directory}/lib/</targetPath>
+      </resource>
+      <resource>
+        <directory>${basedir}/res</directory>
+        <targetPath>${project.build.directory}/res/</targetPath>
+      </resource>
+      <resource>
+        <directory>.</directory>
+        <includes>
+          <include>run_binary.*</include>
+          <include>version</include>
+        </includes>
+        <targetPath>${project.build.directory}/</targetPath>
+      </resource>
     </resources>
     <plugins>
       <plugin>
